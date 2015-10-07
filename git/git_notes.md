@@ -15,4 +15,9 @@ git config  user.email usersemail@email.example
 ```sh
 git config  -l 
 ```
+# List Details of Remotes  
+```sh
+git remote  -v 
+```
+
 
