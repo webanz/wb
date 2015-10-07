@@ -11,3 +11,8 @@ git config --global credential.helper 'cache --timeout=3600'
 git config  user.name myusername
 git config  user.email usersemail@email.example 
 ```
+# See current git configuration 
+```sh
+git config  -l 
+```
+
