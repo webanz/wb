@@ -21,5 +21,12 @@ do
 done 
 
 
+# Checking if virtual env exist or not  
+if [ `lsvirtualenv -b | grep python3` == 'python3' ]; then 
+   echo "Virtual Env python3 exist" 
+fi 
+
+
+
 
 
