@@ -1,21 +1,28 @@
-# Caching Credentials  
+## Caching Credentials  
 
 ```sh 
 git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=3600'
 ```
 
-# Set Username and Email for the current repo 
+## Storing Credentials  
+This will store files in ~/.git-credentials unencrypted. 
+```sh
+git config credential.helper store
+```
+
+
+## Set Username and Email for the current repo 
 
 ```sh
 git config  user.name myusername
 git config  user.email usersemail@email.example 
 ```
-# See current git configuration 
+## See current git configuration 
 ```sh
 git config  -l 
 ```
-# List Details of Remotes  
+## List Details of Remotes  
 ```sh
 git remote  -v 
 ```
