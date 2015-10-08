@@ -33,6 +33,14 @@ git diff
 git diff --cached  
 ```
 
+## See which files have changed between branches  
+```sh
+git diff --name-status customMakefile..master
+```
+### See actual changes  between branches
+```sh
+git diff customMakefile..master
+```
 
 ## Syncing a fork 
 
