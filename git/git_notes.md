@@ -26,6 +26,13 @@ git config  -l
 ```sh
 git remote  -v 
 ```
+## See Changes  
+```sh 
+git status
+git diff 
+git diff --cached  
+```
+
 
 ## Syncing a fork 
 
