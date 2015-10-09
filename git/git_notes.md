@@ -55,3 +55,17 @@ git merge upstream/master # merge upstream/master to local master
 git push origin master # push changes  to forked repo 
 
 ```
+
+## Reset a pull ( did just now ) 
+```sh 
+git reset --hard master@{"10 minutes ago"} 
+```
+
+
+## Pull changes from local repository 
+```sh 
+cd my_local_repo
+git pull ../my_another_repo  branch_on_another:branch_on_another
+git branch 
+```
+
