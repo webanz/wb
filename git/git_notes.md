@@ -68,4 +68,6 @@ cd my_local_repo
 git pull ../my_another_repo  branch_on_another:branch_on_another
 git branch 
 ```
+## Git bash prompt styling 
+See https://github.com/magicmonty/bash-git-prompt 
 
