@@ -71,3 +71,10 @@ git branch
 ## Git bash prompt styling 
 See https://github.com/magicmonty/bash-git-prompt 
 
+## Undo a commit and Redo
+```sh
+$ git commit ...
+$ git reset --soft HEAD^      
+$ edit                        
+$ git commit -a -c ORIG_HEAD  
+```
