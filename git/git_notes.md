@@ -78,3 +78,9 @@ $ git reset --soft HEAD^
 $ edit                        
 $ git commit -a -c ORIG_HEAD  
 ```
+## Undoing a commit and making it a topic branch 
+```sh
+$ git branch topic/wip     # HEAD and topi/wip points at same commit
+$ git reset --hard HEAD~3  # undoing 3 commits ; rewinding HEAD ; topic/wip not rewind
+$ git checkout topic/wip   
+```
