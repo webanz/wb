@@ -84,3 +84,8 @@ $ git branch topic/wip     # HEAD and topi/wip points at same commit
 $ git reset --hard HEAD~3  # undoing 3 commits ; rewinding HEAD ; topic/wip not rewind
 $ git checkout topic/wip   
 ```
+## Undoing commits permanently 
+```sh
+$ git commit ...
+$ git reset --hard HEAD~3   
+```
