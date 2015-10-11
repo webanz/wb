@@ -89,3 +89,15 @@ $ git checkout topic/wip
 $ git commit ...
 $ git reset --hard HEAD~3   
 ```
+## Undoing a merge or pull 
+```sh
+$ git pull                         (
+Auto-merging nitfol
+CONFLICT (content): Merge conflict in nitfol
+Automatic merge failed; fix conflicts and then commit the result.
+$ git reset --hard                 (2)
+$ git pull . topic/branch          (3)
+Updating from 41223... to 13134...
+Fast-forward
+$ git reset --hard ORIG_HEAD       (4)
+```
