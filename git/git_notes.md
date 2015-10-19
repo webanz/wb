@@ -146,6 +146,29 @@ git diff
 ```
 ### Go to submodules and fetch all changes
 ```sh
-git submodule udpate --remote <submoduleName>
+# master branch of submodules will be fetched  
+git submodule update --remote <submoduleName>
+# setting to a branch other than master can be done on 
+# per submodule basis using gitmodules file or git /config 
+git config -f .gitmodules submodule.<submoduleName>.branch <submoduleBranchName> 
+git submodule update --remote 
+# Note that .gitmodules is a version controlled file and changes apply globally 
+```
+### Git log 
+```sh  
+git log -p --submodule 
+```
+### Working on a main project and its submodule 
+```sh 
+# Go to submodule dir and checkout a branch 
+git checkout stable
+# Merge changes in remote repo to local branch stable 
+git submodule update --remote --merge  
+# A local change is made , also want to incorporote change in upstream 
+# rebase is required to avoid detached head state ( not local branch )
+git submodule update --remote --rebase  
 ```
 
+
+
+## Rebasing  
