@@ -169,6 +169,13 @@ git submodule update --remote --merge
 git submodule update --remote --rebase  
 ```
 
-
-
+### Publishing submodule changes  
+```sh 
+# in submodule dir 
+git diff
+# in main proj 
+git push --recurse-submodules=check
+# check --> push will fail if any of commited submodule changes haven't been pushed
+# on-demand --> will try to push individual submodule changes
+```
 ## Rebasing  
