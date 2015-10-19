@@ -122,3 +122,14 @@ The submodule repo does not know the repo in which it is submodule.
 git diff --cached DbConnector
 git diff --cached --submodule 
 ```
+### Clonning a project with submodules
+```sh
+# Method 1
+git clone  <url_of_proj_having_submods>
+cd <proj_folder>
+cd <submodule_folder>  # sub module folders will be present 
+git submodule init     # this creates submodule config file  
+git submodule update   # Fetch all data and checkout to appropriate commit 
+# Method 2 : Using recursive 
+git clone --recursive <url> 
+```
