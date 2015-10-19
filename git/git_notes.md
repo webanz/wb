@@ -177,5 +177,6 @@ git diff
 git push --recurse-submodules=check
 # check --> push will fail if any of commited submodule changes haven't been pushed
 # on-demand --> will try to push individual submodule changes
+git push --recurse-submodules=on-demand
 ```
 ## Rebasing  
