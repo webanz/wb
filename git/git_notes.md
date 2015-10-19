@@ -101,3 +101,24 @@ Updating from 41223... to 13134...
 Fast-forward
 $ git reset --hard ORIG_HEAD       (4)
 ```
+## Git Submodules 
+Submodule is a repository that has to be integrated in current git repository,
+but to be maintained separately
+
+### Adding a new Submodule 
+```sh
+git submodule add <url>
+```
+### .gitmodules file 
+.gitmdodules file holds submodule information 
+The submodule repo does not know the repo in which it is submodule. 
+```
+[submodule "DbConnector"]
+	path = DbConnector
+	url = https://github.com/chaconinc/DbConnector
+```
+### Seeing diff 
+```sh
+git diff --cached DbConnector
+git diff --cached --submodule 
+```
