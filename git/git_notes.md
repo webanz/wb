@@ -133,3 +133,19 @@ git submodule update   # Fetch all data and checkout to appropriate commit
 # Method 2 : Using recursive 
 git clone --recursive <url> 
 ```
+### Pulling in upstream changes ( for an already cloned repo having submodules) 
+```sh
+# On Submodule Dir 
+git fetch 
+git merge origin/master
+# go to main project 
+git diff --submodule 
+# or for easy way 
+git config --global diff.submodule log  
+git diff  
+```
+### Go to submodules and fetch all changes
+```sh
+git submodule udpate --remote <submoduleName>
+```
+
