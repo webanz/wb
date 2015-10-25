@@ -101,6 +101,12 @@ Updating from 41223... to 13134...
 Fast-forward
 $ git reset --hard ORIG_HEAD       (4)
 ```
+## Checkout a tag 
+```sh
+git tag -l 
+git checkout tags/<tag_name>
+```
+
 ## Git Submodules 
 Submodule is a repository that has to be integrated in current git repository,
 but to be maintained separately
