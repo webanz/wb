@@ -185,4 +185,18 @@ git push --recurse-submodules=check
 # on-demand --> will try to push individual submodule changes
 git push --recurse-submodules=on-demand
 ```
+### Remove a submodule 
+```sh
+mv subfolder asubmodule_tmp
+git submodule deinit asubmodule    
+git rm asubmodule
+# Note: asubmodule (no trailing slash)
+# or, if you want to leave it in your working tree
+git rm --cached asubmodule
+mv asubmodule_tmp asubmodule
+But you seem to still need a:
+
+rm -rf .git/modules/asubmodule
+```
+
 ## Rebasing  
