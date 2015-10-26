@@ -23,6 +23,31 @@ git config  user.email usersemail@email.example
 ```sh
 git rev-parse <branch_name>
 ```
+## See reflog  
+```sh 
+git reflog 
+```
+## Example references  
+```sh 
+
+git show HEAD@{5}
+git show master@{yesterday}
+git log -g master
+# previous commit 
+git show HEAD^
+# parent of 
+git show 9898hj^
+# super parent of  
+git show 9898hj^2
+# first parent of first parent ( transitive) 
+git show HEAD~2
+# Commit Ranges 
+git  log master..experiment 
+git log origin/master..HEAD
+git log refA..refB
+git log ^refA refB
+git log refB --not refA
+```
 
 ## See current git configuration 
 ```sh
