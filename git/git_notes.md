@@ -101,6 +101,11 @@ Updating from 41223... to 13134...
 Fast-forward
 $ git reset --hard ORIG_HEAD       (4)
 ```
+## See Files Changed In a Commit 
+```sh
+ git diff-tree --no-commit-id --name-only -r 847f56
+```
+
 ## Checkout a tag 
 ```sh
 git tag -l 
