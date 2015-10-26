@@ -18,6 +18,12 @@ git config credential.helper store
 git config  user.name myusername
 git config  user.email usersemail@email.example 
 ```
+
+## See which SHA a branch is  
+```sh
+git rev-parse <branch_name>
+```
+
 ## See current git configuration 
 ```sh
 git config  -l 
