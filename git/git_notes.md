@@ -102,6 +102,12 @@ git branch
 ## Git bash prompt styling 
 See https://github.com/magicmonty/bash-git-prompt 
 
+## All Commits Reachable via  Either of both commits ; but not by both 
+```sh
+git log master...experiment
+```
+
+
 ## Undo a commit and Redo
 ```sh
 $ git commit ...
